@@ -1,4 +1,8 @@
 git checkout -b [name_branch]  (crea branch)
-git checkout master (vuelve a la rama master)
+git checkout master (seleccion rama master)
 git branch -d [name_branch] (elimina branch)
 
+****actualiza & fusiona****
+git pull
+git merge <branch>
+git diff <source_branch> <target_branch>
