@@ -1,0 +1,4 @@
+git checkout -b [name_branch]  (crea branch)
+git checkout master (vuelve a la rama master)
+git branch -d [name_branch] (elimina branch)
+
