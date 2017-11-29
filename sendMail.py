@@ -34,7 +34,7 @@ def sendMail(to,subject,text):
         print "[-] Sending Mail Failed."
 
 def main():
-    sendMail("mabixabor@balanc3r.com", "Revisa el intento de inicio de sesion bloqueado", "<h1>Hola mundo!!</h1>" )
+    sendMail("mabixabor@balanc3r.com", "Revisa el intento de inicio de sesion bloqueado", "<h1>Hello World!!</h1>" )
 
 if __name__ == "__main__":
     main()
