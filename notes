@@ -1,0 +1,5 @@
+sudo sysctl -w kernel.randomize_va_space = 0
+
+find 0x111111,0x222222,<find_string>
+string -a -t x /lib/libc-2.11.so | grep "/bin/sh"
+x/s *((char **)environ)
