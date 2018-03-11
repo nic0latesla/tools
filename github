@@ -16,3 +16,6 @@ git diff <source_branch> <target_branch>
 git add smaple.c
 git commit -m "update"
 git push origin master
+
+***repurar archivo del repositorio github***
+git checkout <file_name>
