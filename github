@@ -1,3 +1,8 @@
+****loggin*******
+git config --global user.name "nic0latesla"
+git config --global user.email "elec7r00n@gmail.com"
+
+********************************************
 git checkout -b [name_branch]  (crea branch)
 git checkout master (seleccion rama master)
 git branch -d [name_branch] (elimina branch)
@@ -6,3 +11,8 @@ git branch -d [name_branch] (elimina branch)
 git pull
 git merge <branch>
 git diff <source_branch> <target_branch>
+
+*****Cargar un archivo nuevo al repositorio************
+git add smaple.c
+git commit -m "update"
+git push origin master
