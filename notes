@@ -3,3 +3,5 @@ find 0x111111,0x222222,<find_string>
 string -a -t x /lib/libc-2.11.so | grep "/bin/sh"
 x/s *((char **)environ)
 apt-get install gcc-multilib
+find / -type f -perm -04000 -ls (files with suid active)
+gdb -p [pid] -q
