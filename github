@@ -13,7 +13,7 @@ git merge <branch>
 git diff <source_branch> <target_branch>
 
 *****Cargar un archivo nuevo al repositorio************
-git add smaple.c
+git add smaple.c => git add .
 git commit -m "update"
 git push origin master
 
