@@ -1,6 +1,7 @@
 ****loggin*******
 git config --global user.name "nic0latesla"
 git config --global user.email "elec7r00n@gmail.com"
+git config --global credential.helper store
 
 ********************************************
 git checkout -b [name_branch]  (crea branch)
