@@ -16,7 +16,7 @@ git diff <source_branch> <target_branch>
 *****Cargar un archivo nuevo al repositorio************
 git add smaple.c => git add .
 git commit -m "update"
-git push origin master
+git push origin master => git push origin
 
 ***repurar archivo del repositorio github***
 git checkout <file_name>
