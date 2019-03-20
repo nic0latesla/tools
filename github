@@ -28,3 +28,5 @@ git add README.md
 git commit -m "first commit"
 git remote add origin git@github.com:alexpchin/<reponame>.git
 git push -u origin master
+git branch (ver listado de versionesde un repositorio)
+git checkout [nombre_version_repo]
