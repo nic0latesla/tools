@@ -18,8 +18,8 @@ git add smaple.c => git add .
 git commit -m "update"
 git push origin master => git push origin
 
-***repurar archivo del repositorio github***
-git checkout <file_name>
+***repurar archivo desde server github***
+git pull <repository> <branch>
 
 ****Create new repository*********************
 touch README.md
@@ -30,3 +30,4 @@ git remote add origin git@github.com:alexpchin/<reponame>.git
 git push -u origin master
 git branch (ver listado de versionesde un repositorio)
 git checkout [nombre_version_repo]
+git fetch <remote> <rbranch>:<lbranch>
