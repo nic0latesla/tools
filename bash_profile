@@ -1,5 +1,5 @@
 crtsh(){
-	curl -s https://crt.sh/\?q\=\%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u
+   curl -s https://crt.sh/\?q\=\%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u
 }
 
 sublist3r(){
@@ -7,7 +7,7 @@ sublist3r(){
 }
 
 runlive(){
-	cat $1 | httprobe > $HOME/Recon/$1/$1_live.txt
+	cat $1 | httprobe > $1_live.txt
 }
 
 rununiq(){
@@ -15,25 +15,25 @@ rununiq(){
 }
 
 cleanhttps(){
-	cat $HOME/Recon/$1/final_urls.txt |sed 's/https\?:\/\///' > $HOME/Recon/$1/url.txt
+	cat $1 |sed 's/https\?:\/\///' > url.txt
 }
 
 runnmap(){
-	nmap -iL $HOME/Recon/$1/url.txt -Pn -n -sn -oG openport.txt
+	nmap -iL $1 -Pn -n -sn -oG openport.txt
 }
 
 runhost(){
-cat $HOME/Recon/$1/openport.txt | grep ^Host | cut -d " " -f 2 > $HOME/Recon/$1/host.txt
+	cat openport.txt | grep ^Host | cut -d " " -f 2 > host.txt
 }
 
 runmasscan(){
-	sudo masscan -iL host.txt -p 0-65535  -oX $HOME/Recon/$1/mass_output.xml --max-rate 100000
+	masscan -iL host.txt -p 0-65535  -oX mass_output.xml --max-rate 100000
 }
 
 runaquatone(){
-	cat $HOME/Recon/$1/mass_output.xml | aquatone -out $HOME/Recon/$1/
+	cat mass_output.xml | aquatone -out report
 }
 
 rundirsearch(){
-	python3 $HOME/dirsearch/dirsearch.py -L $HOME/Recon/$1/final_urls.txt -e * --plain-text-report=$HOME/Recon/$1/dirsearch.txt
+	python3 ~/Desktop/tools/dirsearch/dirsearch.py -L final_urls.txt -e * --plain-text-report=dirsearch.txt
 }
