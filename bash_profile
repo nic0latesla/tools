@@ -62,6 +62,10 @@ rundirsearch(){
 	python3 ~/Desktop/tools/dirsearch/dirsearch.py -L live.txt -e html,shtml,js,json,txt,bak,rar,zip --plain-text-report=dirsearch.txt
 }
 
+hostlive(){
+	for site in $(cat subdomains.txt);do curl -s -o /dev/null -I -w "%{http_code}" https://$site --max-time 5; printf " - $site \n" & done > responses.txt
+}
+
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
