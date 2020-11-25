@@ -40,6 +40,10 @@ init(){
     echo "installing httprobe"
     go get -u github.com/tomnomnom/httprobe 
     echo "done"
+    
+    echo "installing ffuf"
+    go get -u github.com/ffuf/ffuf 
+    echo "done"
 }
 
 recon(){
