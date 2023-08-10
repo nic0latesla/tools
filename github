@@ -27,12 +27,11 @@ ssh-keygen -t ed25519 -C "manueldelgado84@gmail.com"
 cat ~/.ssh/id_ed25519.pub
 
 ****Create new repository*********************
-git init
 touch README.md
+git init
 git add README.md
 git commit -m "first commit"
-git branch -M main
 git remote add origin git@github.com:mdelgadorobles/<reponame>.git
-curl -u USERNAME:PASSWORD https://api.github.com/user/repos -d '{"name":"myDirName"}'
-git push -u origin main
+curl -u user:pass -L -X POST -H "Authorization: Bearer <YOUR-TOKEN>" -H "Accept: application/vnd.github+json" https://api.github.com/user/repos -d '{"name":"<name_repo>","description":"initial repo!","homepage":"https://github.com","private":true,"is_template":true}'
+git push -u origin master
 
