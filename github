@@ -22,6 +22,10 @@ git push origin (main/master) => git push origin
 git fetch origin main
 git pull origin main
 
+**************Generating a new SSH key*******************
+ssh-keygen -t ed25519 -C "manueldelgado84@gmail.com"
+cat ~/.ssh/id_ed25519.pub
+
 ****Create new repository*********************
 touch README.md
 git init
