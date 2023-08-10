@@ -31,8 +31,8 @@ git init
 touch README.md
 git add README.md
 git commit -m "first commit"
-git remote add origin git@github.com:alexpchin/<reponame>.git
-git push origin main
-git branch (ver listado de versionesde un repositorio)
-git checkout [nombre_version_repo]
-git fetch origin master
+git branch -M main
+git remote add origin git@github.com:mdelgadorobles/<reponame>.git
+curl -u USERNAME:PASSWORD https://api.github.com/user/repos -d '{"name":"myDirName"}'
+git push -u origin main
+
