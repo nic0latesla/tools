@@ -27,12 +27,12 @@ ssh-keygen -t ed25519 -C "manueldelgado84@gmail.com"
 cat ~/.ssh/id_ed25519.pub
 
 ****Create new repository*********************
-touch README.md
 git init
+touch README.md
 git add README.md
 git commit -m "first commit"
 git remote add origin git@github.com:alexpchin/<reponame>.git
-git push -u origin master
+git push origin main
 git branch (ver listado de versionesde un repositorio)
 git checkout [nombre_version_repo]
 git fetch origin master
